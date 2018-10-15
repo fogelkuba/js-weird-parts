@@ -1,11 +1,15 @@
 
 
-
 var a = 'hello world';
 
 function b() {
-    console.log(this);
+    l          
 }
 
+// console.log('')
 
-console.log(window);
+
+// console.log(this);
+
+console.log();
+
