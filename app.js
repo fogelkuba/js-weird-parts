@@ -1,15 +1,17 @@
+b()
+// console.log(a); 
+var a;
 
-
-var a = 'hello world';
+// var a = 'hello world';
 
 function b() {
-    l          
+    console.log('function B')
 }
 
-// console.log('')
+console.log(this);
 
-
-// console.log(this);
-
-console.log();
-
+if (a === undefined) {
+    console.log('undefined');
+} else {
+    console.log('defined');
+}
