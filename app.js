@@ -17,19 +17,36 @@
 // }
 
 
-function b () {
-    // var myVar;
-    console.log(myVar);
+// function b () {
+//     // var myVar;
+//     console.log(myVar);
+// }
+
+// function a () {
+//     var myVar = 2;
+//     console.log(myVar);
+//     b(); 
+//     // console.log(myVar);
+// }
+
+// var myVar = 1;
+// console.log(myVar);
+
+// a();
+
+
+
+function waitThreeeSeconds() {
+    var ms = 3000 + new Date().getTime();
+    while (new Date() < ms){}
+    console.log('finished function');    
 }
 
-function a () {
-    var myVar = 2;
-    console.log(myVar);
-    b(); 
-    // console.log(myVar);
+function clickHandler() {
+    console.log('click event');    
 }
 
-var myVar = 1;
-console.log(myVar);
+document.addEventListener('click', clickHandler);
 
-a();
+waitThreeeSeconds();
+console.log('finished execution');
