@@ -18,7 +18,7 @@
 
 
 function b () {
-    var myVar;
+    // var myVar;
     console.log(myVar);
 }
 
@@ -33,4 +33,3 @@ var myVar = 1;
 console.log(myVar);
 
 a();
-// console.log(myVar);   
