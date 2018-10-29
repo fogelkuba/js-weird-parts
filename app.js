@@ -56,3 +56,10 @@ let a = 3
 let b = '4'
 var res = a - (-b)
 console.log(res);
+
+if ( a != b) {
+    console.log('equal');   
+} else {
+        console.log('not equal');
+
+}
