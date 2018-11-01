@@ -65,7 +65,6 @@ if ( a != b) {
 }
 
 
-if (a || a === 0) {
-    console.log('STH');
-    
+if (a || a === 0) {g
+    console.log('STH');   
 }
