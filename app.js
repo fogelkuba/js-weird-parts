@@ -61,10 +61,9 @@ if ( a != b) {
     console.log('equal');   
 } else {
         console.log('not equal');
-
 }
 
-
 if (a || a === 0) {g
-    console.log('STH');   
+    console.log('STH'); 
+
 }
