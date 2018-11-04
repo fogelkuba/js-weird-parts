@@ -14,6 +14,8 @@ a();
 b();
 c();
 
+
+
 var d = {
     name: 'The D obj',
     log: function(){
@@ -26,8 +28,8 @@ var d = {
         
         var setName = function(newname){
             // console.log(this);   
-            console.log(self);
-            self.name = newname;
+            // console.log(this);
+            this.name = newname;
         }
         // console.log(this);   
         setName('updated again')
