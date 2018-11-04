@@ -27,7 +27,7 @@ var d = {
         var setName = function(newname){
             // console.log(this);   
             console.log(self);
-            this.name = newname;
+            self.name = newname;
         }
         // console.log(this);   
         setName('updated again')
