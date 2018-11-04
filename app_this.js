@@ -21,7 +21,15 @@ var d = {
     log: function(){
         this.name = ' updated D obj';
         console.log(this);
+
+        var setName = function(newname){
+            console.log(this);
+            
+            this.name = newname;
+        }
+        setName('updated again')
     }
 }
 
+d.log()
 d.log()
