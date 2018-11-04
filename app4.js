@@ -21,17 +21,18 @@ let person2 = {
 // console.log(person2);
 
 
+// function greet(a) {
+//     // console.log('hi');
+//     a.greeeting
+// }
+
+// greet.language = 'english';
+
+// console.log(greet);
+// console.log(greet.language);
 
 
 
-
-
-
-function greet() {
-    console.log('hi');
+function changeGreeting(obj) {
+    obj.greeting = 'Hola';
 }
-
-greet.language = 'english';
-
-console.log(greet);
-console.log(greet.language);
