@@ -9,4 +9,13 @@ person['adress'] = new Object();
 person.adress.city = 'Cannes';
 person.adress.number = '1123';
 
-console.log(person);
+let person2 = {
+    name: '',
+    last: '',
+    adress: {
+        city: '',
+        number: ''
+    }
+}
+
+console.log(person2);
