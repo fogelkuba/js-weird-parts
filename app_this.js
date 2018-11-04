@@ -37,3 +37,11 @@ var d = {
 }
 
 d.log();
+
+
+function functionE(a, b, c) {
+    console.log(arguments);
+
+}
+
+functionE('test1', 'test2', 'test3')
