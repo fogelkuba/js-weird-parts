@@ -37,12 +37,12 @@ let c = {};
 c['greeting'] = 'hello';
 let d = c;
 
+console.log(c);
+console.log(d);
+
 function changeGreeting(obj) {
     obj.greeting = 'Hola';
 }
-
-console.log(c);
-console.log(d);
 
 changeGreeting(d);
 console.log(c);
