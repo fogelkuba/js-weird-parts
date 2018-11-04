@@ -14,20 +14,22 @@ a();
 b();
 c();
 
-
-
 var d = {
     name: 'The D obj',
     log: function(){
+
+        var self = this;
+
         this.name = ' updated D obj';
         console.log(this);
-
+        console.log(self);
+        
         var setName = function(newname){
-            console.log(this);
-            
+            // console.log(this);   
+            console.log(self);
             this.name = newname;
         }
-        console.log(this);
+        // console.log(this);   
         setName('updated again')
     }
 }
