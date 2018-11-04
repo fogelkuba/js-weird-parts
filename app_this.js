@@ -27,9 +27,9 @@ var d = {
             
             this.name = newname;
         }
+        console.log(this);
         setName('updated again')
     }
 }
 
-d.log()
-d.log()
+d.log();
