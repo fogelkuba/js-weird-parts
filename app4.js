@@ -33,6 +33,24 @@ let person2 = {
 
 
 
+let c = {}; 
+c['greeting'] = 'hello';
+let d = c;
+
 function changeGreeting(obj) {
     obj.greeting = 'Hola';
 }
+
+console.log(c);
+console.log(d);
+
+changeGreeting(d);
+console.log(c);
+console.log(d);
+
+c = {
+    greeting: 'howdy'
+}
+
+console.log(c);
+console.log(d);
