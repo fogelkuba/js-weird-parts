@@ -63,7 +63,7 @@ if ( a != b) {
         console.log('not equal');
 }
 
-if (a || a === 0) {g
+if (a || a === 0) {
     console.log('STH'); 
-
+    //?
 }
