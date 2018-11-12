@@ -21,7 +21,6 @@ var c = [];
 
 
 var d = [1,2,3,3,4,5,5,6,6,7,7]
-
 for (let prop in d) {
     console.log(d[prop]);
 }
