@@ -1,4 +1,4 @@
-var person = {
+class person = {
     firstName: 'Default',
     lastname: 'Default',
     getFullName: function() {
@@ -6,7 +6,15 @@ var person = {
     }
 }
 
-var john = {
-    firstName: 'John',
-    lastname: 'Doe'
-}
+// var john = {
+//     firstName: 'John',
+//     lastname: 'Doe' 
+// }
+
+var john = new person(
+    var john = {
+        firstName: 'John',
+        lastname: 'Doe'
+    }
+
+)
