@@ -39,6 +39,16 @@ _.extend(johny, jane);
 // console.log(johny);
 
 
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
 // function constructor
 function Person(name, age) {
     this.name = name;
@@ -48,3 +58,5 @@ function Person(name, age) {
 let john = new Person('John', 21);
 console.log(john);
 
+let jenny = new Person('Jenny', 27);
+console.log(jenny);
