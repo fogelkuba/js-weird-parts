@@ -60,3 +60,7 @@ console.log(john);
 
 let jenny = new Person('Jenny', 27);
 console.log(jenny);
+
+Person.prototype.getAge = function () {
+    return this.name + ' is ' + this.age + ' years old.';
+};
