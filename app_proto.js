@@ -6,7 +6,7 @@ var person = {
     }
 }
 
-var john = {
+var johny = {
     firstName: 'John',
     lastname: 'Doe' 
 }
@@ -35,6 +35,16 @@ var c = [];
 //     console.log(i, person[i]);
 // }
 
+_.extend(johny, jane);
+// console.log(johny);
 
-_.extend(john, jane);
+
+// function constructor
+function Person(name, age) {
+    this.name = name;
+    this.age = age;
+};
+
+let john = new Person('John', 21);
 console.log(john);
+
