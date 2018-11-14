@@ -64,3 +64,16 @@ console.log(jenny);
 Person.prototype.getAge = function () {
     return this.name + ' is ' + this.age + ' years old.';
 }; 
+
+
+let man = {
+    firstname: 'DEfault',
+    lastname: 'Default',
+    greet: function() {
+        return 'Hi ' + this.firstname;
+    }
+}
+
+let peter = Object.create(man);
+peter.firstname = 'Peter';
+console.log(peter);
