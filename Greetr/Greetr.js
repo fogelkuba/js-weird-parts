@@ -11,7 +11,7 @@
         es: 'Holla'
     };
 
-    var formalGreeting = {
+    var formalGreetings = {
         en: 'Greetings',
         es: 'Saludos'
     };
@@ -38,7 +38,7 @@
         },
 
         formalGreeting: function () {
-            return this.greetings[this.language] + ' ' + this.firstname + '!'
+            return this.formalGreetings[this.language] + ' ' + this.fullname() + '!'
         }
     };
 
