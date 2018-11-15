@@ -1,10 +1,14 @@
 (function(global, $) {
 
-
     var Greetr = function(firstname, lastname, language){
         return new Greetr.init(firstname, lastname, language);
     };  
 
-    Greetr.
+    Greetr.init = function(firstname, lastname, language) {
+        this.self = this;
+        self.firstname = firstname || '';
+        self.lastname = lastname || '';
+        self.language = language || '';
+    }
 
 })(window, jQuery);
