@@ -1,3 +1,3 @@
 (function(global, $) {
 
-})(window, jQuery)
+})(window, jQuery);
