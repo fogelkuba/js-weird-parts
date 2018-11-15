@@ -6,14 +6,19 @@
 
     var supportedLanguages = ['en', 'es'];
 
-    greetings = {
+    var greetings = {
         en: 'Hello',
         es: 'Holla'
-    }
+    };
 
-    formalGreeting = {
+    var formalGreeting = {
         en: 'Greetings',
         es: 'Saludos'
+    };
+
+    var logMessages = {
+        en: 'Logged in',
+        es: 'Inició sesión'
     }
 
     Greetr.prototype = {}
