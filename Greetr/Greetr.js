@@ -1,14 +1,14 @@
-(function(global, $) {
+(function (global, $) {
 
-    var Greetr = function(firstname, lastname, language){
-        return new Greetr.init(firstname, lastname, language);
-    };  
+    var Greetr = function (firstName, lastName, language) {
+        return new Greetr.init(firstName, lastName, language);
+    }
 
-    var supportedLanguages = ['en', 'es'];
+    var supportedLangs = ['en', 'es'];
 
     var greetings = {
         en: 'Hello',
-        es: 'Holla'
+        es: 'Hola'
     };
 
     var formalGreetings = {
@@ -19,38 +19,76 @@
     var logMessages = {
         en: 'Logged in',
         es: 'Inició sesión'
-    }
+    };
 
     Greetr.prototype = {
 
-        fullname: function(){
-            return this.firstname + ' ' + this.lastname;
+        fullName: function () {
+            return this.firstName + ' ' + this.lastName;
         },
 
         validate: function () {
-            if (supportedLanguages.indexOf(this.language) === -1 ){
-                throw "Invalid language"
+            if (supportedLangs.indexOf(this.language) === -1) {
+                throw "Invalid language";
             }
         },
 
         greeting: function () {
-            return this.greetings[this.language] + ' ' + this.firstname + '!'
+            return greetings[this.language] + ' ' + this.firstName + '!';
         },
 
         formalGreeting: function () {
-            return this.formalGreetings[this.language] + ' ' + this.fullname() + '!'
+            return formalGreetings[this.language] + ', ' + this.fullName();
+        },
+
+        greet: function (formal) {
+            var msg;
+
+            // if undefined or null it will be coerced to 'false'
+            if (formal) {
+                msg = this.formalGreeting();
+            } else {
+                msg = this.greeting();
+            }
+
+            if (console) {
+                console.log(msg);
+            }
+
+            // 'this' refers to the calling object at execution time
+            // makes the method chainable
+            return this;
+        },
+
+        log: function () {
+            if (console) {
+                console.log(logMessages[this.language] + ': ' + this.fullName());
+            }
+
+            return this;
+        },
+
+        setLang: function (lang) {
+            this.language = lang;
+
+            this.validate();
+
+            return this;
         }
+
     };
 
-    Greetr.init = function(firstname, lastname, language) {
-        this.self = this;
-        self.firstname = firstname || '';
-        self.lastname = lastname || '';
+    Greetr.init = function (firstName, lastName, language) {
+ 
+        var self = this;
+        self.firstName = firstName || '';
+        self.lastName = lastName || '';
         self.language = language || 'en';
+
     }
 
     Greetr.init.prototype = Greetr.prototype;
 
     global.Greetr = global.G$ = Greetr;
 
-})(window, jQuery);
+}(window, jQuery));
